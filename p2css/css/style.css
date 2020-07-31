@@ -1,0 +1,63 @@
+
+body {
+    border-style: solid;
+    border-width: 1px;
+    border-color: red;
+}
+header {
+    background-color: aqua;
+    border-style: solid;
+    border-width: 1px;
+    border-color: violet;
+    margin: 10px 10px 11px 10px;
+}
+
+nav{
+    background-color: rgb(253, 19, 234);
+    margin:  18px 10px 5px 10px;
+}
+
+section{
+    background-color: rgb(99, 121, 250);
+    display: inline-block;
+    width: 720px;
+  height: 160px;
+  padding: 18px;
+  margin: 10px 10px 11px 10px;
+}
+
+article{
+    background-color: violet;
+    width: 720px;
+  height: 30px;
+  margin-block-end: 4px;
+   
+}
+
+h1{
+    text-align: left;
+    text-align: 10px;
+}
+
+aside {
+    background-color: rgb(238, 99, 99);
+    display: inline-block;
+    width: 230px;
+  height: 160px;
+  padding: 18px;
+  margin-top: auto;
+  margin-left: 6px;
+  vertical-align: top; margin-top: 10px;
+  
+    
+    
+}
+
+footer{
+    background-color: rgb(158, 170, 236);
+    margin: 10px 10px 11px 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(66, 97, 235);
+    
+}
