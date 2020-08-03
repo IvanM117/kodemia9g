@@ -1,0 +1,12 @@
+header{
+
+    background-color: black;
+    width: auto;
+    height: 60px;
+}
+
+header.div.ul{
+list-style-position:inline;
+list-style: white;
+}
+
