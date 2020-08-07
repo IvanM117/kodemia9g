@@ -64,6 +64,15 @@ body{
 .nav-wrapper ul li:nth-of-type(even){
     background-color:#8d8d8d;
 }
+.div-wrapper ul li:nth-child(4) {
+    border-top:white 1px solid;
+}
+
+.div-wrapper ul li:last-child {
+    height: 10px;
+    background-color:hsl(180, 66%, 49%);
+    border-radius: 50px;
+}
 <<<<<<< HEAD
 section{
     width: 100%;
