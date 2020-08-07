@@ -5,7 +5,7 @@
 body{
     margin: 0;
 }
-.nav-s{
+nav {
     display: flex;
     justify-content: space-between;
 }
@@ -57,14 +57,14 @@ body{
     justify-content: center;
     color: white;
 }
-
-.nav-wrapper ul li:nth-of-type(odd){
-    background-color:#acacac;
+.parte2 {
+    border-top:white 1px solid;
 }
-.nav-wrapper ul li:nth-of-type(even){
-    background-color:#8d8d8d;
+.div-wrapper ul li:last-child {
+    height: 10px;
+    background-color:hsl(180, 66%, 49%);
+    border-radius: 50px;
 }
-<<<<<<< HEAD
 section{
     width: 100%;
 }
@@ -131,8 +131,9 @@ aside .div2{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
-aside .div2 .imgbgd{
+aside .div2 article .imgbgd{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -142,8 +143,10 @@ aside .div2 .imgbgd{
     background-color: hsl(255, 11%, 22%);
     border-radius: 50%;
     padding: 0;
+    position: absolute;
+    top: -30px;
 }
-aside .div2 .imgbgd img{
+aside .div2 .imgbgd article img{
     width: 50%;
 }
 aside .div2 article{
@@ -153,26 +156,36 @@ aside .div2 article{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    position: relative;
+    margin: 40px;
 }
 aside .div2 article h2{
     margin-top: 50px;
 }
 aside .div3{
     width: 100%;
-    height: 300px;
+    height: 280px;
     background-color:  hsl(257, 27%, 26%);
     margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
+}
+aside .div3 img{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 0;
 }
 aside .div3 p{
     color: white;
     font-size: 7vw;
     font-weight: bold;
     margin-bottom: 10px;
+    z-index: 10;
 }
 footer{
    background-color: hsl(255, 11%, 22%);
@@ -194,7 +207,81 @@ footer div ul{
     flex-direction: column;
     align-items: center;
     padding: 0;
-=======
+}
+footer div ul li{
+    margin: 5px;
+}
 
->>>>>>> 678a6941eca4fff5f8f978a0005cb85734c9f9a0
+.socialmedia{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+.socialmedia img{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/*Shorten link*/
+#box-wrapper{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+#box-wrapper > div{
+    margin-top: 2rem;
+    width:80%;
+    height: 15rem;
+    background-color: red; /*BORRAR DESPUÉS*/
+    border-radius: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#box-wrapper > div button{
+    background-color: rgb(40, 209, 209);
+    width: 100%;
+    height: 40%;
+    border-radius: 5px;
+    color:white;
+    font-size:2rem;
+}
+#box-wrapper > div:not(:first-of-type){
+    background-color: white;
+}
+#box-wrapper > div:first-of-type input,#box-wrapper > div:first-of-type > button{
+    width: 100%;
+    height: 70%;
+} 
+#box-wrapper > div:first-of-type #input-container{
+}
+#box-wrapper > div:first-of-type #input-container{
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+}
+#box-wrapper > div:first-of-type #input-container input{
+    height: 35%;
+    font-size: 2rem;
+}
+#box-wrapper > div .highlight{
+    color:rgb(40, 209, 209);
+}
+/*------- OTHER DIVS -------------*/
+#box-wrapper #secondDiv,#box-wrapper #thirdDiv,#box-wrapper #fourthDiv{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 90%;
+    justify-content: space-around;
+    font-size: 2rem;
+    text-align: justify;
+}
+#box-wrapper #secondDiv button,#box-wrapper #thirdDiv button,#box-wrapper #fourthDiv button{
+    width: 100%;
+    justify-self: flex-end;
 }
