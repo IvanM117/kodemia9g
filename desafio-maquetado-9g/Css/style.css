@@ -1,13 +1,26 @@
 *{
-    font-family: Arial, Helvetica, sans-serif
-
+    font-family: "Poppins",sans-serif;
 }
 body{
     margin: 0;
+    width: 100%;
 }
+/****NAV-->Hamburguer manu****/
 nav {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+}
+nav img {
+    margin-left: 12px;
+    margin-top: 10px;
+}
+nav div img .ham-menu{
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 .hamburger-wrapper{
     width:30px;
@@ -16,38 +29,39 @@ nav {
     display:flex;
     align-items: center;
     border-radius:3px;
-    
+    position: absolute;
+    left: 88%;
+    top: 8px;
 }
 .hamburger-icon{
-    border:2px solid #acacac;
-    width:20px;
-    height:3px;
+    border:1.5px solid #acacac;
+    height:1.5px;
+    width: 30px;
     background:#acacac;
     display: block;
-    margin-left: auto;
-    margin-right:auto;
-    box-shadow: 0px 6px 0px #acacac, 0px -6px 0px #acacac;
+    box-shadow: 0px 10px 0px #acacac, 0px -10px 0px #acacac;
 }
 .hamburger-wrapper + input{
    display:none;
-   
 }
 .hamburger-wrapper:hover{
     cursor:pointer;
 }
 .div-wrapper{
     max-height: 0px;
-    transition: max-height .5s ease;
+    transition: max-height 1s ease;
     overflow: hidden;
 }
 #hamburger-input:checked + .div-wrapper{
     max-height:1000px;
+    max-width: 100%;
 }
 .div-wrapper ul{
     list-style: none;
     padding: 10px;
-    background-color: hsl(255, 11%, 22%);
+    background-color: hsl(257, 27%, 26%);
     border-radius: 5px;
+    margin: 20px;
 }
 .div-wrapper ul li{
     padding:10px;
@@ -56,51 +70,60 @@ nav {
     align-items: center;
     justify-content: center;
     color: white;
+    font-weight: 500;
 }
 .parte2 {
     border-top:white 1px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .div-wrapper ul li:last-child {
-    height: 10px;
+    height: 30px;
+    width: 80%;
     background-color:hsl(180, 66%, 49%);
     border-radius: 50px;
+    margin-right: 0;
+    margin-bottom: 20px;
 }
-
 .div-wrapper ul li:nth-child(4) {
     border-top:white 1px solid;
 }
-
-.div-wrapper ul li:last-child {
-    height: 10px;
-    background-color:hsl(180, 66%, 49%);
-    border-radius: 50px;
-}
-
+/*****Section*****/
 section{
-    width: 100%;
+    max-width: 100%;
 }
 .div1{
+    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
-section .div1 img{
-    width: 140%;
-    margin-left: 10px;
+section .div1 .imgcomputer{
+    width: 100%;
+    height: 350px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+section .div1 .imgcomputer img{
+    width: 145%;
+    height: 100%;
 }
 section .div1 header{
     text-align: center;
     color: #333333;
     font-size: 12vw;
-    font-weight: bold;
+    font-weight: bold; 800;
     padding: 10px;
+    letter-spacing:-2px;
 }
 section .div1 p{
     text-align: center;
     color: hsl(257, 7%, 63%);
-    font-size: 6vw;
+    font-size: 5vw;
     padding: 15px;
-
-} 
+}
 button{
     background-color: hsl(180, 66%, 49%);
     height: 50px;
@@ -112,31 +135,154 @@ button{
     font-weight: bold;
     border: none;
 }
+/*********Aside***********/
 aside{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgb(240, 240, 240);
-    padding-top: 150px;
-    margin-top: 200px;
+    margin-top: 120px;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
+/*Aside>Shorten it box*/
+#container{
+    width: 100%;
+    max-height: 15000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#container #purpleBox{
+    text-align: center;
+    width: 85%;
+    height: 150px;
+    background-image: url("../images/bg-boost-desktop.svg");
+    background-color:  hsl(257, 27%, 26%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -65px;
+}
+#container #purpleBox #inputDescription{
+    color: red;
+    font-size: 13px;
+    align-self: flex-start;
+    margin-left: 28px;
+}
+#container #purpleBox #inputPurpleBox{
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 10px;
+    color: hsl(257, 7%, 63%);
+    font-size: 4vw;
+    margin-top: 20px;
+    border: none;
+}
+#container #boxesDeployer{
+display: none;
+}
+#container .buttonS{
+    width: 70%;
+    height: 40px;
+    background-color:hsl(180, 66%, 49%);
+    border-radius: 5px;
+    color: white;
+    position: relative;
+    top: -120px;
+    text-align: center;
+    font-size: 5vw;
+    font-weight: 700;
+}
+#box1,#box2,#box3{
+    width: 85%;
+    height: 150px;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#container #containerWhiteBoxes{
+    width: 100%;
+    display: none;
+    
+}
+#container input[type="checkbox"]:checked ~ #containerWhiteBoxes{
+    width: 100%;
+    max-height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 1s ease;
+    position: relative;
+    top: -100px;
+}
+
+/*-----------------EACH BOX*/
+#container #containerWhiteBoxes .firstP{
+    margin: 0;
+    width: 100%;
+    text-align: left;
+    border-bottom: 3px solid hsl(0, 0%, 75%);
+    padding: 10px;
+    padding-left: 18px;
+    color: hsl(260, 8%, 14%);
+    font-size: 4vw;
+    font-weight: 500;
+}
+#container #containerWhiteBoxes .secondP{
+    margin: 0;
+    color:hsl(180, 66%, 49%);
+    font-size: 4vw;
+    font-weight: 500;
+    padding: 10px;
+    padding-left: 18px;
+    width: 100%;
+    text-align: left;
+}
+#container #containerWhiteBoxes .boxButton{
+    width: 90%;
+    border-radius: 5px;
+}
+/* --------Change the content*/
+#container .boxButton::before{
+    content: "Copy";
+}
+#container #containerWhiteBoxes #input3,#container #containerWhiteBoxes #input2,#container #containerWhiteBoxes #input1{
+    display:none;
+}
+#container #containerWhiteBoxes #box3 button:focus-within,#container #containerWhiteBoxes #box2 button:focus-within,#container #containerWhiteBoxes #box1 button:focus-within{
+    background-color: hsl(257, 27%, 26%);
+}
+#container #containerWhiteBoxes #box3 button:focus-within::before,#container #containerWhiteBoxes #box2 button:focus-within::before,#container #containerWhiteBoxes #box1 button:focus-within::before{
+    content: "Copied!";
+}
+/*Other elements of aside*/
+
 aside h2{
     color: #333333;
     font-size: 8vw;
-    font-weight: bold;
+    font-weight: 700;
 }
 aside p{
     text-align: center;
     color: hsl(257, 7%, 63%);
-    font-size: 4vw;
+    font-size: 5vw;
     display: block;
     width: 80%;
     margin-bottom: 50px;
 }
-
 aside .div2{
     display: flex;
     flex-direction: column;
@@ -151,7 +297,7 @@ aside .div2 article .imgbgd{
     height: 70px;
     width: 70px;
     padding: 15px;
-    background-color: hsl(255, 11%, 22%);
+    background-color: hsl(257, 27%, 26%);
     border-radius: 50%;
     padding: 0;
     position: absolute;
@@ -162,6 +308,7 @@ aside .div2 .imgbgd article img{
 }
 aside .div2 article{
     width: 85%;
+    height: 250px;
     background-color: white;
     padding: 10px;
     display: flex;
@@ -169,9 +316,24 @@ aside .div2 article{
     align-items: center;
     position: relative;
     margin: 40px;
+    border-radius: 5px;
 }
 aside .div2 article h2{
-    margin-top: 50px;
+    margin-top: 60px;
+    font-size: 5.5vw;
+}
+aside .div2 article p{
+    text-align: center;
+    line-height: 1.5;
+    color: hsl(257, 7%, 63%);
+    font-size: 5vw;
+    display: block;
+    width: 90%;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    position: relative;
+    top: -20px;
+    
 }
 aside .div3{
     width: 100%;
@@ -198,6 +360,8 @@ aside .div3 p{
     margin-bottom: 10px;
     z-index: 10;
 }
+
+/****Footer****/
 footer{
    background-color: hsl(255, 11%, 22%);
    width: 100%;
@@ -211,6 +375,9 @@ footer h2{
     margin-top: 50px;
     font-size: 10vw;
 }
+footer h4{
+    font-size: large;
+}
 footer div ul{
     width: 200px;
     list-style: none;
@@ -222,7 +389,13 @@ footer div ul{
 footer div ul li{
     margin: 5px;
 }
-
+footer div ul li a{
+    text-decoration: none;
+    color: rgb(206, 206, 206);
+}
+footer div ul li a:hover{
+    color: rgb(17, 213, 248);
+}
 .socialmedia{
     width: 100%;
     display: flex;
@@ -234,64 +407,485 @@ footer div ul li{
     margin-left: 10px;
     margin-right: 10px;
 }
-/*Shorten link*/
-#box-wrapper{
-    display:flex;
+.socialmedia a img:hover{
+    filter: rgb(17, 213, 248);
+    background-color:  rgb(17, 213, 248);
+}
+/* raya azul*/
+.raya{
+    display: flex;
+    align-items: center;
+    width: 8px;
+    height: 50px;
+    background-color:  rgb(17, 213, 248);
+    margin-bottom: -12px;
+    margin-top: -42px;
+}
+/********************Media para desktop 1440***************/
+@media (min-width:1440px){
+    section .div1{
+        align-items: flex-start;
+        flex-wrap: wrap;
+        position: relative;
+        margin-bottom: 300px;
+    }
+    section .div1 .imgcomputer{
+        width: 600px;
+        height: 500px;
+        margin-left: 10px;
+        align-self: flex-end;
+        position: absolute;
+        top: -30px;
+        left: 1000px;
+    }
+    section .div1 .imgcomputer img{
+        width: 125%;
+        
+    }
+    section .div1 header{
+        color: #333333;
+        font-size: 6vw;
+        font-weight: bold;
+        margin-left: 60px;
+        width: 800px;
+        text-align: left;
+        line-height: 1.2;
+    }
+    section .div1 p{
+        color: hsl(257, 7%, 63%);
+        font-size: 1.5vw;
+        margin-left: 60px;
+        margin-top: 5px;
+        width: 600px;
+        text-align: left;
+        padding-top: 0;
+    } 
+    section .div1 button{
+        background-color: hsl(180, 66%, 49%);
+        height: 50px;
+        width: 200px;
+        align-self: center;
+        border-radius: 50px;
+        color: white;
+        font-size: 1.2vw;
+        font-weight: 500;
+        border: none;
+        align-self: flex-start;
+        margin-left: 60px;
+    }
+    section .div1 button:hover{
+        cursor: pointer;
+        background-color: hsla(180, 66%, 49%, 80%);
+    }
+
+/*****NAV*******/
+    nav{
+        display: flex;
+        flex-direction:row;
+        height: 100px;
+        margin-top: 20px;
+        margin-bottom: 60px;
+        margin-left: 50px;
+    }
+    .ham-menu{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .hamburger-wrapper{
+            display: none;
+        }
+    .div-wrapper{
+        max-height: inherit !important;
+        height: 100%;
+        width: 100%;
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+    .div-wrapper ul{
+        background-color: white;
+        padding: 0;
+        position: relative;
+        z-index: inherit !important;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: 0px;
+        padding: 0px;
+    }
+    .div-wrapper ul li{
+        color:gray;
+        margin: 0px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 0px;
+        height: 40px;
+    }
+    .div-wrapper ul .parte2{
+        flex-direction: row;
+        justify-content: space-between;
+        height: 40px;
+        width: 200px;
+        position: relative;
+        left: 800px;
+        
+    }
+    .div-wrapper ul .parte2 li{
+        margin-bottom: 0;
+    }
+    .div-wrapper ul .parte2 li:last-of-type{
+        color: white;
+    }
+    .div-wrapper ul .parte2 li:last-of-type:hover{
+        cursor: pointer;
+        background-color: hsla(180, 66%, 49%, 80%);
+        border-radius: 50px;
+        font-weight: 500;
+    }
+    .div-wrapper ul li:hover{
+        font-weight: 700;
+        color: hsl(260, 8%, 14%);
+        border-radius:10%;
+        cursor: pointer;
+    }
+
+/*********Footer****************/
+    footer{
+        height: 300px;
+        width: 101%;
+        background-color: #333333;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-top: 5px;
+        margin-left: -1%;
+    }
+.caja1{
+    width: 10%;
+    padding-right: 20px;
+    color: white;
+    margin-right: 450px;
+}
+footer .caja1 h2{
+    margin: 50px;
+    font-size: 3vw;
+}
+footer h4{
+    color: white;
+}
+footer div ul{
+    margin-top: 20px;
+    align-items: flex-start;
+    
+}
+footer div ul li{
+    list-style: none;
+    color: rgb(224, 223, 223);
+    display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    padding: 0;
+    margin: 5px;
 }
-#box-wrapper > div{
-    margin-top: 2rem;
-    width:80%;
-    height: 15rem;
-    background-color: red; /*BORRAR DESPUÉS*/
-    border-radius: 10px;
-    display:flex;
+.socialmedia{
+    margin-top: 40px;
+}
+
+/****************Aside************/
+aside{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap ;
+    position: relative;
+    margin: 0;
+    margin-top: 200px;
+    padding: 0;
+}
+aside h2{
+    color: #333333;
+    font-size: 3vw;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 150px;
+}
+aside p{
+    text-align: center;
+    color: hsl(257, 7%, 63%);
+    font-size: 1.5vw;
+    width: 50%;
+    padding: 20px;
+    margin-bottom: 100px;
+    display: inline-block;
+}
+aside .div2{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 800px;
 }
-#box-wrapper > div button{
-    background-color: rgb(40, 209, 209);
-    width: 100%;
-    height: 40%;
-    border-radius: 5px;
-    color:white;
-    font-size:2rem;
-}
-#box-wrapper > div:not(:first-of-type){
+aside .div2 article{
+    width: 300px;
+    height: 220px;
     background-color: white;
-}
-#box-wrapper > div:first-of-type input,#box-wrapper > div:first-of-type > button{
-    width: 100%;
-    height: 70%;
-} 
-
-#box-wrapper > div:first-of-type #input-container{
-    height: 10rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+aside .div2 article:first-of-type{
+    left: -370px;
+    z-index: 2;
+}
+aside .div2 article:nth-of-type(2){
+    top: -150px;
+    z-index: 1;
+}
+aside .div2 article:last-of-type{
+    right: -370px;
+    top: -290px;
+    z-index: 3;
+}
+aside .div2 article h2{
+    margin-top: 40px;
+    font-size: 1.5vw;
     width: 90%;
+    text-align: left;
 }
-#box-wrapper > div:first-of-type #input-container input{
-    height: 35%;
-    font-size: 2rem;
+aside .div2 article p{
+    margin: 0;
+    font-size: 1vw;
+    padding: 0px;
+    top:0;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 90%;
+    text-align: left;
+    background-color: white;
+
 }
-#box-wrapper > div .highlight{
-    color:rgb(40, 209, 209);
+aside .div2 article .imgbgd{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 70px;
+    padding: 15px;
+    background-color: hsl(255, 11%, 22%);
+    border-radius: 50%;
+    padding: 0;
+    position: absolute;
+    top: -80px;
+    left: 20px;
+    margin-top: 50px;
 }
-/*------- OTHER DIVS -------------*/
-#box-wrapper #secondDiv,#box-wrapper #thirdDiv,#box-wrapper #fourthDiv{
+aside .div2 .imgbgd article img{
+    width: 50%;
+}
+aside .div3{
+    width: 100%;
+    height: 280px;
+    background-color:  hsl(257, 27%, 26%);
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
-    width: 95%;
-    height: 90%;
-    justify-content: space-around;
-    font-size: 2rem;
-    text-align: justify;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
-#box-wrapper #secondDiv button,#box-wrapper #thirdDiv button,#box-wrapper #fourthDiv button{
+aside .div3 img{
+    height: 100%;
     width: 100%;
-    justify-self: flex-end;
+    overflow: hidden;
+    position: absolute;
+    z-index: 0;
+}
+aside .div3 p{
+    color: white;
+    font-size: 3vw;
+    font-weight: bold;
+    margin-bottom: 10px;
+    z-index: 10;
+    padding: 0;
+}
+button{
+    background-color: hsl(180, 66%, 49%);
+    height: 60px;
+    width: 200px;
+    align-self: center;
+    border-radius: 50px;
+    color: white;
+    font-size: 1.2vw;
+    font-weight: 500;
+    border: none;
+    align-self: center;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    z-index: 100;
+}
+button:hover{
+    cursor: pointer;
+    background-color: hsla(180, 66%, 49%, 80%);
+}
+/****Aside>Shorten it box****/
+#container{
+    width: 100%;
+    max-height: 15000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#container #purpleBox{
+    text-align: center;
+    width: 80%;
+    height: 150px;
+    background-image: url("../images/bg-boost-desktop.svg");
+    background-color:  hsl(257, 27%, 26%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    top: -65px;
+}
+#container #purpleBox #inputDescription{
+    color: red;
+    font-size: 13px;
+    align-self: flex-start;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+#container #purpleBox #inputPurpleBox{
+    width: 70%;
+    height: 50px;
+    border-radius: 5px;
+    padding-left: 10px;
+    color: hsl(257, 7%, 63%);
+    font-size: 1.5vw;
+    margin-top: 20px;
+    margin-left: 40px;
+    border: none;
+}
+#container #boxesDeployer{
+display: none;
+}
+#container .buttonS{
+    width: 260px;
+    height: 43px;
+    background-color:hsl(180, 66%, 49%);
+    border-radius: 5px;
+    color: white;
+    position: relative;
+    top: -170px;
+    right: -450px;
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: 500;
+    padding-top: 10px;
+}
+#container .buttonS:hover{
+    cursor: pointer;
+    background-color: hsla(180, 66%, 49%, 80%);
+}
+
+#box1,#box2,#box3{
+    width: 80%;
+    height: 100px;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+#container #containerWhiteBoxes{
+    width: 100%;
+    display: none;
+    
+}
+#container input[type="checkbox"]:checked ~ #containerWhiteBoxes{
+    width: 100%;
+    max-height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 1s ease;
+    position: relative;
+    top: -100px;
+}
+
+/*-----------------EACH BOX*/
+#container #containerWhiteBoxes .firstP{
+    margin: 0;
+    margin-left: 20px;
+    width: 400px;
+    border-bottom: none;
+    padding: 10px;
+    padding-left: 18px;
+    color: hsl(260, 8%, 14%);
+    font-size: 1.5vw;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+
+}
+#container #containerWhiteBoxes .secondP{
+    margin: 0;
+    margin-right: 40px ;
+    color:hsl(180, 66%, 49%);
+    font-size: 1.5vw;
+    font-weight: 500;
+    padding: 0px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#container #containerWhiteBoxes .boxButton{
+    width: 150px;
+    border-radius: 5px;
+    margin-right: 40px;
+    font-size: 1.2vw;
+    font-weight: 500;
+}
+/* --------Change the content*/
+#container .boxButton::before{
+    content: "Copy";
+}
+#container #containerWhiteBoxes #input3,#container #containerWhiteBoxes #input2,#container #containerWhiteBoxes #input1{
+    display:none;
+}
+#container #containerWhiteBoxes #box3 button:focus-within,#container #containerWhiteBoxes #box2 button:focus-within,#container #containerWhiteBoxes #box1 button:focus-within{
+    background-color: hsl(257, 27%, 26%);
+}
+#container #containerWhiteBoxes #box3 button:focus-within::before,#container #containerWhiteBoxes #box2 button:focus-within::before,#container #containerWhiteBoxes #box1 button:focus-within::before{
+    content: "Copied!";
+}
+   /* raya azul*/
+   .raya:first-of-type{
+    display: flex;
+    align-items: center;
+    width: 450px;
+    height: 50px;
+    background-color:  rgb(17, 213, 248);
+    margin-bottom: -12px;
+    margin-top: -42px;
+    padding-top: 6px;
+    position: relative; 
+    top: -60px;;
 }
