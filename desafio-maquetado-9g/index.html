@@ -5,97 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap">
 </head>
 <body>
     <nav>
-        <div>
+        <div class=".logo">
             <img src="images/logo.svg" alt="logo">
-         </div>
-         <div>
-           <label class="hamburger-wrapper" for="hamburger-input">
-              <div class="hamburger-icon"></div>    
-           </label>
-           <input id="hamburger-input" type="checkbox">
+        </div>
+        <div class="ham-menu">
+            <label class="hamburger-wrapper" for="hamburger-input">
+                <div class="hamburger-icon"></div>    
+            </label>
+            <input id="hamburger-input" type="checkbox">
             <div class="div-wrapper">
-              <ul>
-                  <li>Features</li>
-                  <li>Pricing</li>
-                  <li>Resources</li>
-                  <div class="parte2"> 
-                    <li>Login</li>
-                    <li>Sign Up</li>
-                   </div> 
-              </ul>
+                <ul>
+                    <li>Features</li>
+                    <li>Pricing</li>
+                    <li>Resources</li>
+                    <div class="parte2"> 
+                        <li>Login</li>
+                        <li>Sign Up</li>
+                    </div> 
+                </ul>
             </div>   
-         </div>
+        </div>
     </nav>
     <section>
-        <section id="box-wrapper">
-            <div>
-                <div id="input-container">
-                    <input type="text" placeholder="Shorten a link here..." required>
-                    <button>Shorten it!</button>
-                </div> 
-            </div>
-            <div>
-                <div id="secondDiv">
-                    <p>https://www.frontmentor.io</p>
-                    <hr>
-                    <p class="highlight">https://www.frontmentor.io</p>
-                    <button>Copy</button>
-                </div>
-            </div>
-            <div>
-                <div id="thirdDiv">
-                    <p>https://www.frontmentor.io</p>
-                    <hr>
-                    <p class="highlight">https://www.frontmentor.io</p>
-                    <button>Copy</button>
-                </div>
-            </div>
-            <div>
-                <div id="fourthDiv">
-                    <p>https://www.frontmentor.io</p>
-                    <hr>
-                    <p class="highlight">https://www.frontmentor.io</p>
-                    <button>Copy</button>
-                </div>
-            </div>
-        </section>
         <div class="div1">
-            <img src="images/illustration-working.svg" alt="illustration-working">
+            <div class="imgcomputer"><img src="images/illustration-working.svg" alt="illustration-working"></div>
             <header>More than just shorter links</header>
             <p>Build your brand's recognition and get deteiled insights on how your links are performing.</p>
             <button>Get started</button>
         </div>
-        <div></div>
     </section>
     <aside>
+        <div id="container">
+            <div id="purpleBox">
+                <input type="text" id="inputPurpleBox" value="Shorten a link here...">
+                <label for="inputPurpleBox" id="inputDescription"><i>Please add a link</i></label>
+            </div>
+            <input type="checkbox" id="boxesDeployer">
+            <label class="buttonS" for="boxesDeployer">Shorten it!</label>
+            <div id="containerWhiteBoxes">
+                <div id="box1">
+                    <p class="firstP">https://frontendmentor.io</p>
+                    <p class="secondP">https://rel.ink/j4lKyk</p>
+                    <button class="boxButton"><input type="text" id="input1"></button>
+                </div>
+                <div id="box2">
+                    <p class="firstP">https://frontend.io</p>
+                    <p class="secondP">https://rel.ink/j4lKyk</p>
+                    <button class="boxButton"><input type="text" id="input2"></button>
+                </div>
+                <div id="box3">
+                    <p class="firstP">https://frontend.io</p>
+                    <p class="secondP">https://rel.ink/j4lKyk</p>
+                    <button class="boxButton"><input type="text" id="input3"></button>
+                </div>
+            </div>
+        </div>
+
         <div class="div2">
-            <h2>Advanced statics</h3>
+            <h2>Advanced statistics</h3>
             <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae sunt perspiciatis velit laboriosam! Laborum!</p>
-            
             <article>
                 <div class="imgbgd">
                     <img src="images/icon-brand-recognition.svg" alt="Grafica">
                 </div>
                 <h2>Brand Recognition</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis voluptates amet suscipit similique, quis explicabo id odit animi itaque ratione fuga ut sed!
+                <p>Lorem ipsum dolor, sit elit. Perspiciatis voluptates amet suscipit similique, quis explicabo id odit animi
                 </p>
             </article>
+            <div class="raya" ></div>
             <article>
                 <div class="imgbgd">
                     <img src="images/icon-detailed-records.svg" alt="velocimetro">
                 </div>
                 <h2>Detailed Records</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, incidunt reiciendis? Doloribus cum quam sed quas nemo facilis dignissimos veritatis illo. Maxime, unde?</p>
+                <p>Lorem ipsum dolor sit amet elit. Quisquam, incidunt reiciendis? Doloribus facilis veritatis illo. Maxime, unde?</p>
             </article>
+            <div class="raya" ></div>
             <article>
                 <div class="imgbgd">
                     <img src="images/icon-fully-customizable.svg" alt="pinceles">
                 </div>
                 <h2>Fully customatizable</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, incidunt reiciendis? Doloribus cum quam sed quas nemo facilis dignissimos veritatis illo. Maxime, unde?</p>
+                <p>Lorem ipsum dolor sit amet elit. Quisquam, incidunt reiciendis? Doloribus nemo facilis  illo. Maxime, unde?</p>
             </artticle>
         </div>
         <div class="div3">
@@ -105,36 +100,39 @@
         </div>
     </aside>
     <footer>
-        <h2>Shortly</h2>
+        <div class="caja1">
+            <h2>Shortly</h2>
+        </div>
         <div>
             <ul>
                 <h4>Features</h4>
-                <li>lorem</li>
-                <li>lorem</li>
-                <li>lorem</li>
+                <li> <a href="#"> Link Shortening</a></li>
+                <li><a href="#">Branded Links</a></li>
+                <li><a href="#">Analytics</a></li>
             </ul>
         </div>
         <div>
             <ul>
                 <h4>Resources</h4>
-                <li>lorem</li>
-                <li>lorem</li>
-                <li>lorem</li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Developers</a></li>
+                <li><a href="#">Support</a></li>
             </ul>
         </div>
         <div>
             <ul>
                 <h4>Company</h4>
-                <li>lorem</li>
-                <li>lorem</li>
-                <li>lorem</li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </div>
         <div class=socialmedia>
-            <img src="images/icon-facebook.svg" alt="Facebook">
-            <img src="images/icon-twitter.svg" alt="Twitter">
-            <img src="images/icon-pinterest.svg" alt="Pinterest">
-            <img src="images/icon-instagram.svg" alt="Instagram">
+            <a href="#"><img src="images/icon-facebook.svg" alt="Facebook"></a>
+            <a href="#"><img src="images/icon-twitter.svg" alt="Twitter"></a>
+            <a href="#"><img src="images/icon-pinterest.svg" alt="Pinterest"></a>
+            <a href="#"><img src="images/icon-instagram.svg" alt="Instagram"></a>
         </div>
     </footer>
 </body>
