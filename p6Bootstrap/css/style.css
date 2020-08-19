@@ -1,0 +1,167 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    color: hsl(243, 87%, 12%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.nav-wrapper {
+    height: 200px;
+}
+
+.navbar-nav {
+    flex-direction: row;
+    
+}
+
+.navbar-nav li {
+    margin-right: 40px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: hsl(243, 87%, 12%);
+}
+
+.navbar-nav li a:hover{
+    color: hsl(238, 22%, 44%);
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 1.4;
+}
+
+.bg-img {
+    background-image: url(/images/bg-curve-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100px;
+}
+
+.second-section-wrapper {
+    background-color: hsl(240, 75%, 98%);
+}
+
+.text-cyan {
+    color:hsl(170, 45%, 43%);
+}
+.border-success {
+    border-color: hsl(170, 45%, 43%) !important;
+}
+
+.w-card {
+    width: 60%;
+}
+
+.text-sm {
+    font-size: .8rem;
+}
+
+.w-avatar{
+    width: 10%;
+}
+
+h6 {
+    font-size: .8rem;
+    margin-bottom: 0;
+}
+
+.third-section-wrapper {
+    background-color: hsl(238, 22%, 44%);
+}
+
+.btn {
+    padding: .375rem .90rem;
+    font-size: .80rem;
+    height: 40px;
+}
+
+.btn-primary {
+    background-color: hsl(224, 93%, 58%);
+    border-color:  hsl(224, 93%, 58%);
+}
+
+.text-wrapper {
+    height: 400px;
+    padding: 0;
+}
+
+.text-wrapper h3, .text-wrapper p {
+    color: #fff;
+}
+
+.footer-wrapper {
+    background-color: hsl(243, 87%, 12%);
+}
+
+.contact-wrapper {
+    height: 400px;
+}
+
+.contact-wrapper p, .contact-wrapper i{
+    color: #fff;
+}
+
+.list-group {
+    list-style: none;
+}
+
+.list-group li {
+    margin-bottom: 10px;
+}
+
+.list-group li a {
+    color: #fff;
+}
+
+@media only screen and (max-width: 768px){
+    .nav-wrapper {
+        height: 80px;
+    }
+
+    .contact-wrapper {
+        height: 700px;
+    }
+
+     .main-logo {
+        max-width: 4rem;
+    }
+
+    .navbar-nav li {
+        margin-right: 10px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+    
+    .bg-img {
+        background-image: url(/images/bg-curve-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 50px;
+    }
+
+    .w-card {
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    .text-wrapper {
+        height: 400px;
+        padding: 30px 20px;
+    }
+
+    .form-group {
+        margin-bottom: 0rem;
+    }
+    
+
+}
